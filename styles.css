@@ -14,12 +14,13 @@
 --title-text-color:#000;
 --accent-color: #2196F3;
 --primary-white-color: #fff;
+--second-color: #2F303A;
 }
 
 body {
-    background-color:#fff;
-    color:#757575;
-
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-size: 14px;    
     font-family: Roboto, sans-serif;
 }
 
@@ -36,15 +37,15 @@ body {
     text-decoration:none;
 }
 .logo-web {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .logo-studio {
-    color: #000;
+    color: var(--title-text-color)
 }
 
 
 /* site nav */
-.site-nav .link {
+.link {
 color: var(--title-text-color);
  font-weight: 500;
  font-size: 14px;
@@ -52,11 +53,10 @@ color: var(--title-text-color);
  text-decoration:none;
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.link:hover, .link:focus {
     color: var(--accent-color)  
 }
-
-.site-nav .link.current {
+.link.current {
     color: var(--accent-color)
 }
 
@@ -68,7 +68,28 @@ color: var(--title-text-color);
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    background:#2F303A ;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+.hero {
+    background: var(--second-color);
+    height: 600px;
+ 
+}
+
+.main-title {
+    Width: 696px;
+    Height: 120px;
+    Top: 280px;
+    Left:452px;
+}
+
+.photo{
+    background-color: var(--primary-white-color);
+    width: 270px;
+    height: 368px;
+   
 }
 
   /* footer */
@@ -80,22 +101,29 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     text-decoration:none;
 }
-.footer-list .footer:hover, .footer-list .footer:focus {
+.footer:hover,.footer:focus {
     color: var(--accent-color) 
 }
-
-.address{
-  font-style: normal;
+.address {
+    font-style: normal;
 }
-
 .footer-address {
-    color: var(--primary-text-color);
+    color:var(--primary-white-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+.footer-section {
+    background:var(--second-color);
+}
+.logo-footer {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.19;
+    letter-spacing: 0.03em;
+}
 
 /* contact style */
 .contact-links .link {
@@ -123,6 +151,10 @@ color: var(--title-text-color);
     text-align: center; 
 }
 
+.section-people {
+ background: #F5F4FA;;
+
+ }
 .section-team {
     color: var(--title-text-color) ;
     font-weight: 500;
@@ -131,7 +163,7 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
 }
 
-.list .title {
+.title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -139,7 +171,7 @@ color: var(--title-text-color);
     text-transform: uppercase;
 }
 
-.section .work text {
+.work text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -148,26 +180,19 @@ color: var(--title-text-color);
 
 /* button */
 .button {
-    color: #fff;
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-}
-.button.primery {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-}
-
-.c-button {
-    appearance: none;
     border: 0;
     border-radius: 4px;
-    background: #2196F3;
-    color: #fff;
-    padding: 10px 32px;
-    font-size: 16px;
-  }
+    cursor: pointer;
+}
+
+
+
 
 
   /* --------------------СТРАНИЦА ПОРТФОЛИО-------------------- */
@@ -188,14 +213,30 @@ color: var(--title-text-color);
 
   .btn-background {
     background: #F5F4FA;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height:  1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
   }
-.btn-background .btn-background:hover, .btn-background:focus {
+.btn-background:hover, .btn-background:focus {
     background: var(--accent-color);
     color: var(--primary-white-color);
-    
+}
+.btn-current {
+    background: var(--accent-color);
+    color: var(--primary-white-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
 }
